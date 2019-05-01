@@ -1,0 +1,18 @@
+1 .  a. 
+curl http://www.staff.hs-mittweida.de/~wuenschi/data/media/compbiolbook/chapter-11-regex--structure.pdb
+
+ sed '/Beisel/weisel/' <filename>
+
+b. sed'1,3d' <filename>
+c. sed '4,10!d' <filename>
+d. sed '/MET/d' <filename>
+e. sed '/^HELIX/!d' <filename> | sed '/ILE/!d'
+f. sed '/^H/!d' <filename>
+g. sed '/SEQRES/!d' <filename> | sed 'c SEQ'
+
+h. 
+the code to upload
+scp -i 44341539.pem jabberwocky.txt ubuntu@ec2-54-252-243-192.ap-southeast-2.compute.amazonaws.com
+
+the code to delte the blank lines
+sed ‘/^[[:space:]]*$/d’ 
